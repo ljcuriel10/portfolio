@@ -127,6 +127,12 @@ a:hover {
 section {
     padding: 0 25%;
 }
+#about ul {
+    display: flex;
+}
+#about ul li{
+    padding: 5px;
+}
 /* --- Groups & Items --- */
 
 .group {
