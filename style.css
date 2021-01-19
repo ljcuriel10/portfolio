@@ -1,71 +1,184 @@
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    color: #89b0ae;
-    padding-top: .5em;
-}
-h2 {
-    color: #faf9f9;
-    font-size: 35px;
-}
 body{
-    margin: 0px;
-    padding: 0px;
-    text-align: center; /*centers everything*/
-    background-color: #89b0ae;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  
   header{
-    margin-top: -3em;
-    margin-bottom: 1em;
-    padding-bottom: .5em;
-    background-color: #555b6e;
-
+      background-color: #000;
+      margin-bottom: 40px;
   }
-  ul{
-      list-style-position: inside;
-      list-style-type: square;
+  header h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  header h3{
+      color:white;
       text-align: center;
-      font-size: 20px;
+      margin: 0;
+      padding-top: 10px;
   }
-  ol{
-      list-style-position: inside;
+  /* --- Styles for Navigation --- */
+
+  header nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
   }
-  footer{
-      background-color: #555b6e;
-      color: #89b0ae;
-      margin-bottom:-1em  ;
-      padding: .2em;
+  header nav ul {
+      display: flex;
+      padding-bottom: 0;
+      list-style: none;
   }
-  section.center { /*centers paragraph in about me*/
-      padding: 5em;
-  }
-  p{
-      font-size: 20px;
-  }
-  /*psuedo code for links*/
-  /*unvisited link*/
-  a:link{
-      color: #faf9f9;
-      text-decoration: none;
-  }
-  /*color for visted link*/
-  a:visited{
-    color:#555b6e;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+@media all and (min-width: 786px){
+    header{
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header h1 {
+        margin: 14px 0;
+        padding-top: 0;
+    }
+    header nav{
+        margin-top: 8px;
+    }
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
+}
+
+/* --- End Nav --- */
+
+section{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+   
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0px 10px;
+}
+
+h2{
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+section ul{
+    list-style: none;
+}
+img {
+   width: 100%;
+}
+main a {
+    font-weight: 700;
     text-decoration: none;
 }
-/*color when the mouse passes over link*/
-  a:hover{
-      color:#ffd6ba;
-      text-decoration: none;
+main a:link {
+    color:black;
+}
+main a:visited {
+    color:cadetblue;
+}
+main a:hover {
+    color: darkgrey;
+}
+a:active {
+    color: darkgrey;
+}
+a:hover {
+    text-decoration: underline;
+}
+#about {
+    background-color: black;
+    color: white;
+}
+#contact ul {
+    width: 100%;
+}
+section {
+    padding: 0 25%;
+}
+/* --- Groups & Items --- */
+
+.group {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item {
+    flex: 1;
+    margin: 10px;
+}
+.item-double {
+    flex: 2;
+}
+
+  /* --- Groups & Items (Desktop) --- */
+
+  @media all and (min-width: 760px) {
+      section {
+          padding: 0 10%;
+      }
+      .group {
+          flex-direction: row;
+      }
   }
 
-  /*styling of the hr break*/
-  hr {
-    overflow: visible; 
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
+  /* Form Styles */
+  form {
+      margin: 20px;
+      width: 100%;
+  }
+  form label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: darkgrey;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  form input{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  form input[type="text"] {
+      color: #000;
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+  form textarea {
+      height: 4rem;
+      width: 100%;
+      color: #000;
+      font-size: 16px;
+      margin-bottom: 20px;
+  }

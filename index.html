@@ -4,13 +4,8 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Luis's Portfolio</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+  <meta name="viewport" content="width=device-width" initial-scale = 1/>
+  <title>Luis Javier Curiel</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head> 
 <!--Body contains Introduction, about me and contact information-->
@@ -19,50 +14,104 @@
 <!--Header contains name and personal title-->
 
  <header>
-     <section>
     <h1> 
          <strong>Luis Javier Curiel</strong>
     </h1>
-     <h2>Thinkful Student</h2>
-     </section>
+     <h3>Full Stack Developer</h3>
+     <nav>
+         <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#portfolio">Portfolio</a></li>
+         <li><a href="#contact">Contact</a></li>
+         </ul>
+     </nav>
  </header>
  <main>
      <!--Introduction Starts here-->
-     <section>
-         <img src="images/luis.jpeg" alt="Luis Curiel" width="400" height="400">
-         <h2>Intro</h2>
-         <p>Hello! My name is Luis Curiel and I am a web developer student from June Lake, California.</p>
-         <h3>My interests as a web developer:</h3>
-         <ol>
-             <li>html</li>
-             <li>css</li>
-             <li>JavaScript</li>
-         </ol>
+     <section id="home">
+        <h1>Hi! I'm Luis Javier Curiel</h1>
+         <div class="group">
+             <div class="item">
+                 <img src="images/luis.jpeg" alt="Luis Curiel">
+            </div>
+            <div class="item-double">
+                <p>Hello! My name is Luis Curiel and I am a web developer student from June Lake, California.</p>
+                <h3>My interests as a web developer:</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </div>
+         </div>
      </section>
      <!--About me begins here-->
-     <hr>
-     <section class="center">
+     <section id="about">
         <h2>A Little About Me</h2>
-         <img src="images/junelake.jpg" alt="June Lake, CA" width="500" height="500">
-        <p>I'm from a very small town in the Eastern Sierra Mountains called June Lake, CA. If you like to ski or snowboard and are from the west coast you might of heard of Mammoth Mountain which is in my neighboring town. Growing up in the mountains I have come to love skiing, hiking, and overall just being outdoors. I'm also a very techy person so I've always dreamed of working in the tech industry. I am very excited about starting my career and finding jobs that I can be passionate about!</p>
-        <p> I have worked with and lead different teams throughout my life so being able to implement that as a web developer I'm excited to work with different teams to create new and exciting things. If your looking for a hard working individual who is passionate about web design please contact me!</p>
-     </section>
-     <hr>
+         <div class="group">
+            <div class="item">
+                <img src="images/junelake.jpg" alt="June Lake, CA">
+            </div>
+            <div class="item-double">
+                <p>I'm from a very small town in the Eastern Sierra Mountains called June Lake, CA. If you like to ski or snowboard and are from the west coast you might of heard of Mammoth Mountain which is in my neighboring town. Growing up in the mountains I have come to love skiing, hiking, and overall just being outdoors. I'm also a very techy person so I've always dreamed of working in the tech industry. I am very excited about starting my career and finding jobs that I can be passionate about!</p>
+                <p> I have worked with and lead different teams throughout my life so being able to implement that as a web developer I'm excited to work with different teams to create new and exciting things. If your looking for a hard working individual who is passionate about web design please contact me!</p>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Start-->
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+      <div class="group">
+          <div class="item">
+            <img src="images/pexels-alleksana-4271927.jpg" alt="coming soon" class="rounded">
+            <h2>Local Library</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam, ullam omnis repudiandae eos obcaecati quos ducimus facilis voluptatem architecto fugit dolor nemo itaque quod sunt praesentium rem sint quibusdam?</p>
+          </div>
+          <div class="item">
+              <img src="images/pexels-alleksana-4271927.jpg" alt="coming soon" class="rounded">
+              <h2>Decoder Ring</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla, accusantium omnis at distinctio dolor quod numquam incidunt reiciendis cupiditate doloremque aliquid accusamus nobis eveniet, dolore ipsa? Sunt, aperiam aut?</p>
+          </div>
+      </div>
+    </section>
      <!--Contact begins here-->
-     <section>
-         <h2>Contact</h2>
-         <ul>
-             <li>Email: <a href="mailto:ljcuriel0729@gmail.com" target="_blank"> ljcuriel0729@gmail.com</a></li>
-             <li>Phone: <a href="tel:7607090872" target="_blank">760-709-0872</a></li>
-             <li> <a href="https://www.linkedin.com/in/luis-curiel-82a9871b7/"
-                target="_blank">LinkedIn</a></li>
-             <li> <a href="https://github.com/ljcuriel10" target="_blank"> GitHub</a></li>
-         </ul>
+     <section id="contact">
+        <h2>Contact</h2>
+        <div class="group">
+        <form action="#" method="POST">
+            <label for="user-name">Name:</label>
+            <input id="user-name"
+            type="text"
+            name="name"
+            autofocus= "on"
+            required>
+            <label for="user-email">Email:</label>
+            <input
+            id="user-email"
+            type="email"
+            name="email"
+            required>
+            <label for="user-message">Message:</label>
+            <textarea
+            id="user-message"
+            name="message"
+            required
+            maxlength="250"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+            <ul>
+                <li>Phone: <a href="tel:7607090872" target="_blank">760-709-0872</a></li>
+                <li> <a href="https://www.linkedin.com/in/luis-curiel-82a9871b7/"
+                    target="_blank">LinkedIn</a></li>
+                <li> <a href="https://github.com/ljcuriel10" target="_blank"> GitHub</a></li>
+            </ul>
+         </div>
      </section>
  </main>
  <!--Footer contains Copyright info-->
  <footer>
-     <p>&copy;Luis Curiel</p>
+     <p>&copy;Luis J Curiel</p>
  </footer>
 </body>
 </html>
